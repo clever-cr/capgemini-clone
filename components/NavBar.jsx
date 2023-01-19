@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Button from "./button";
+import Btn from "./Btn";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +18,9 @@ const NavBar = () => {
   useEffect(() => {
     document.addEventListener("scroll", whenIsScrolled);
   });
-  //   useEffect(() => {
-  //     document.addEventListener("click", MenuOpen);
-  //   });
+
   return (
-    <div className="group- relative">
+    <div className="group-  relative">
       <div
         className={`absolute- z-10 w-full px-[48px] sm:px-3  sm:pt-2 group-hover:bg-white space-y-[10px] fixed ${
           isScrolled
@@ -93,7 +91,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-8 h-8 hidden sm:block border-l pl-[10px] hover:cursor-pointer"
+                className="w-8 h-8 hidden sm:block border-l pl-[10px] hover:cursor-pointer"
                 onClick={MenuOpen}
               >
                 <path
@@ -158,8 +156,32 @@ const NavBar = () => {
                 </div>
               );
             })}
+          </div>{" "}
+          {/* <button className="flex items-center w-[237px] h-[48px]  rounded-full px-[17px] justify-between border border-[#15011d] bg-white">
+            <p className="text-[#15011d]">Investors</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button> */}
+          <div className="flex pt-[176px] pl-4">
+            <Btn text={"Investors"} />
+            <Btn text={"Contact Us "} style={"bg-[#00e6e3]"} />
           </div>
-          <Button text={"Investors"} />
+          <div className="flex justify-between pl-4">
+            <p>Global|EN</p>
+            <p>change</p>
+          </div>
         </div>
       )}
     </div>

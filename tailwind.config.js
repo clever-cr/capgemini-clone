@@ -23,6 +23,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-ubuntu)", ...fontFamily.sans],
       },
+      colors: {
+        primary: "#15011d",
+      },
     },
   },
   plugins: [],

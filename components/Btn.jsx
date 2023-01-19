@@ -1,10 +1,13 @@
 import React from "react";
 
-const Button = ({ text }) => {
+const Btn = ({ text, style }) => {
   return (
-    <div className="">
-      <div className="bg-blue-500 flex justify-between items-center">
-        <p>{text}</p>
+    <div>
+      {" "}
+      <button
+        className={`flex items-center w-[237px] h-[48px]  rounded-full px-[17px] justify-between border border-[#15011d] bg-white ${style}`}
+      >
+        <p className="text-[#15011d]">{text}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -19,9 +22,9 @@ const Button = ({ text }) => {
             d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
           />
         </svg>
-      </div>
+      </button>
     </div>
   );
 };
 
-export default Button;
+export default Btn;
