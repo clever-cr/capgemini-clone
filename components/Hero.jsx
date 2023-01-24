@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="sm:pb-60">
       <video
         className=""
         src="/video/davos.mp4"

@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <div className="group-  relative">
       <div
-        className={`absolute- z-10 w-full px-[48px] sm:px-3  sm:pt-2 group-hover:bg-white space-y-[10px] fixed ${
+        className={`absolute- z-50 w-full px-[48px] sm:px-3  sm:pt-2 group-hover:bg-white space-y-[10px] fixed ${
           isScrolled
             ? "bg-white pt-[32px] duration-500 sm:bg-transparent-"
             : "duration-500"
@@ -121,7 +121,7 @@ const NavBar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="bg-[#F2F2F2] absolute- z-10 w-full fixed top-[59px] hidden h-[720px] sm:block pr-5 space-y-3 pt-5 ">
+        <div className="bg-[#F2F2F2] absolute- z-10 w-full- fixed top-[59px] hidden h-[720px] sm:block pr-5 space-y-3 pt-5 ">
           <div className="">
             {[
               "insights",
@@ -136,8 +136,12 @@ const NavBar = () => {
                   key={index}
                   className="flex items-center justify-between border-b pl-5 py-5 pb-2 hover:bg-[#15011d] group"
                 >
-                  <Link className="group-hover:text-white" href={"#"}>
+                  <Link
+                    className="group-hover:text-white hover:text-[#0070ad] w-fit group relative transition-all ease-in duration-300"
+                    href={"#"}
+                  >
                     {item}
+                    <span className="absolute w-0 h-[1px] group-hover:w-full bg-[#0070ad] left-0 bottom-1 transition-all ease-in duration-300" />
                   </Link>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

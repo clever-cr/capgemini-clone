@@ -1,20 +1,20 @@
 import React from "react";
 
-const Btn = ({ text, style }) => {
+const Btn = ({ text, style, style2, style3 }) => {
   return (
     <div>
       {" "}
       <button
         className={`flex items-center w-[237px] h-[48px]  rounded-full px-[17px] justify-between border border-[#15011d] bg-white ${style}`}
       >
-        <p className="text-[#15011d]">{text}</p>
+        <p className={`text-[#15011d] ${style2}`}>{text}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className={`w-6 h-6 ${style3}`}
         >
           <path
             strokeLinecap="round"

@@ -2,8 +2,8 @@ import React from "react";
 
 const Insights = () => {
   return (
-    <div className="pt-[120px]">
-      <h3 className="text-[32px] leading-[40px] text-[#15011d]  pb-[32px] pl-[112px]">
+    <div className="pt-[120px] pb-[100px]">
+      <h3 className="text-[32px] leading-[40px] text-[#15011d]  pb-[32px] pl-[112px] sm:pl-5 sm:text-2xl">
         Latest insights
       </h3>
       <div className="flex relative ">
@@ -16,7 +16,7 @@ const Insights = () => {
             />
           </picture>
         </div>
-        <div className="bg-white absolute space-y-3 right-24 w-[526px] h-[304px] pt-[32px] px-[32px] pb-[202px] top-[48px] shadow-2xl">
+        <div className="bg-white absolute space-y-3 right-24 sm:right-2 w-[526px] sm:w-[460px] h-[304px] pt-[32px] px-[32px] pb-[202px] top-[48px] sm:top-[370px]  sm:h-fit sm:pb-5 shadow-2xl">
           <div className="flex items-center gap-2 ">
             <h3 className="bg-black w-5 h-[1.5px]"></h3>
             <p className="text-[15px] leading-[23px]">Report</p>
